@@ -5,8 +5,8 @@
     Eksempelet viser bruk av for-setning.
 */
 
-for ($tall=1;$tall <= 10;$tall++){
-    echo $tall . "<br>";
+for ($i=1;$i <= 10;$i++){
+    echo $i . "<br>";
 }
 
 ?>
