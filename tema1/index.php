@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema1</title>
+</head>
+<body>
+    <h1>Tema 1</h1>
+
+<ul>
+    <li><a href="tema1ovingsoppgave1/oppgave1.html">Oppgave 1 HTML</a></li>
+    <li><a href="tema1ovingsoppgave1/oppgave1.php">Oppgave 1 PHP</a></li>
+
+    <li><a href="tema1ovingsoppgave2/oppgave2.html">Oppgave 2 HTML</a></li>
+    <li><a href="tema1ovingsoppgave2/oppgave2.php">Oppgave 2 PHP</a></li>
+
+    <li><a href="tema1ovingsoppgave3/oppgave3.html">Oppgave 3 HTML</a></li>
+    <li><a href="tema1ovingsoppgave3/oppgave3.php">Oppgave 3 PHP</a></li>
+
+    <li><a href="tema1ovingsoppgave4/oppgave4.html">Oppgave 4 HTML</a></li>
+    <li><a href="tema1ovingsoppgave4/oppgave4.php">Oppgave 4 PHP</a></li>
+</ul>
+
+<a href="../Index.html">Tilbake til hovedside</a>
+
+</body>
+</html>

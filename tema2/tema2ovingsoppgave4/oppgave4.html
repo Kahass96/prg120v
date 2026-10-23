@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgave 4</title>
+</head>
+<body>
+    <form action="gift.php" method="post">
+        <label>Er du gift (j/n)</label>
+        <input type="text" name="gift" id="gift">
+        <label>Har du barn (j/n)</label>
+        <input type="text" name="barn" id="barn">
+        <input type="submit" value="Fortsett">
+        <input type="reset" value="Nullstill">
+    </form>
+</body>
+</html>
