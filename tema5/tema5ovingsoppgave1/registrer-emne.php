@@ -66,6 +66,4 @@ if (isset($_POST["registreremneknapp"]))
   }
 ?>
 <br>
-<button type="button" onclick="window.location.href='./'">
-    Tilbake til mappen
-</button>
+<a href="../index.html">Tilbake til hovedmenyen</a>

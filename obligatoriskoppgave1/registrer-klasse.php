@@ -66,4 +66,4 @@ if (isset($_POST["registrerklasseknapp"]))
   }
 ?>
 <br>
-<a href="index.php">Tilbake til hovedmenyen</a>
+<a href="../index.html">Tilbake til hovedmenyen</a>

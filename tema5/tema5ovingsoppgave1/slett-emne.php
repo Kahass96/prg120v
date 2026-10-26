@@ -38,6 +38,4 @@ if (isset($_POST["slett"])) {
 </form>
 
 <br>
-<button type="button" onclick="window.location.href='./'">
-    Tilbake til mappen
-</button>
+<a href="../index.html">Tilbake til hovedmenyen</a>

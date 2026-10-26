@@ -71,4 +71,4 @@ if (isset($_POST["registrerStudentknapp"]))
   }
 ?>
 <br>
-<a href="index.php">Tilbake til hovedmenyen</a>
+<a href="../index.html">Tilbake til hovedmenyen</a>
