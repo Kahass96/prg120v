@@ -1,5 +1,5 @@
 <?php /* db-tilkobling */
-$db = mysqli_connect("localhost", "root", "", "kahas0695");
+$db = mysqli_connect("localhost", "root", "", "");
 
 if (!$db) {
     die("Ikke kontakt med database-server");
