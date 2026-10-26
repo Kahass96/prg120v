@@ -66,4 +66,4 @@ if (isset($_POST["registreremneknapp"]))
   }
 ?>
 <br>
-<a href="../index.html">Tilbake til hovedmenyen</a>
+<a href="index.html">Tilbake til hovedmenyen</a>

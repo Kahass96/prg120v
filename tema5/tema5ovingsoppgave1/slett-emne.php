@@ -38,4 +38,4 @@ if (isset($_POST["slett"])) {
 </form>
 
 <br>
-<a href="../index.html">Tilbake til hovedmenyen</a>
+<a href="index.html">Tilbake til hovedmenyen</a>

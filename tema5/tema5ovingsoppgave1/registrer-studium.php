@@ -61,4 +61,4 @@ if (isset($_POST["registrerstudiumknapp"]))
   }
 ?>
 <br>
-<a href="../index.html">Tilbake til hovedmenyen</a>
+<a href="index.html">Tilbake til hovedmenyen</a>
