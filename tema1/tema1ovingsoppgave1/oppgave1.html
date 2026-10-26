@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oppgave 1</title>
+    <style>
+        .back-button {
+            display: inline-block;
+            padding: 0.5rem 0.75rem;
+            border: 1px solid #555;
+            border-radius: 4px;
+            color: inherit;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-<form method="post" action="tema1/tema1ovingsoppgave1/oppgave1.php">
+<form method="post" action="oppgave1.php">
     <label>Fornavn</label>
         <input type="text" name="fornavn" required>
     
@@ -17,6 +27,6 @@
     <button type="reset">Nullstill</button>
 </form>
 <br>
-<a href="../indextema1.html">Tilbake</a>
+<a class="back-button" href="../indextema1.html">Tilbake til Tema 1</a>
 </body>
 </html>
