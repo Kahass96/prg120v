@@ -20,6 +20,6 @@ for ($i=1;$i <= 10;$i++){
     <title>Document</title>
 </head>
 <body>
-    <a href="../Index.html">Tilbake</a>
+    <a href="tema3">Tilbake</a>
 </body>
 </html>

@@ -17,6 +17,6 @@ echo "Summen av tallene fra 1 til 10 er $sum";
     <title>Document</title>
 </head>
 <body>
-    <a href="../Index.html">Tilbake</a>
+    <a href="tema3">Tilbake</a>
 </body>
 </html>
