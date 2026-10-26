@@ -1,5 +1,5 @@
 <?php /* db-tilkobling */
-$db = mysqli_connect("localhost", "root", "", "ovingsoppgave5_d1");
+$db = mysqli_connect("localhost", "root", "", "kahas0695");
 
 if (!$db) {
     die("Ikke kontakt med database-server");
