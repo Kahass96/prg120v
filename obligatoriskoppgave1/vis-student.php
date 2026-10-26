@@ -1,0 +1,44 @@
+<?php
+/* Vis-studium */
+/* Programmet viser alle studenter i tabellen student. */
+
+include("db-tilkobling.php");
+
+$sqlSetning = "SELECT * FROM student;";
+$sqlResultat = mysqli_query($db, $sqlSetning) or die("Ikke mulig å hente data fra databasen");
+ /* SQL-setning sendt til database-serveren */
+
+$antallRader = mysqli_num_rows($sqlResultat);
+/* Antall rader i resultatet beregnet */
+
+print("<h3>Registrerte studenter</h3>");
+print("<table border=1>");
+print("<tr>
+        <th align=left>Brukernavn</th>
+        <th align=left>Fornavn</th>
+        <th align=left>Etternavn</th>
+        <th align=left>klassekode</th></tr>");
+
+for ($r = 1; $r <= $antallRader; $r++)
+{
+    $rad = mysqli_fetch_array($sqlResultat);
+
+    $brukernavn = $rad["brukernavn"];
+    $fornavn = $rad["fornavn"];
+    $etternavn = $rad["etternavn"];
+    $klassekode = $rad["klassekode"];
+
+    print
+    ("<tr>
+        <td>$brukernavn</td>
+        <td>$fornavn</td>
+        <td>$etternavn</td>
+        <td>$klassekode</td>
+    </tr>");
+}
+
+print("</table>");
+
+?>
+<br>
+<a href="index.php">Tilbake til hovedmenyen</a>
