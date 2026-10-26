@@ -1,7 +1,9 @@
 <?php /* Tilkobling til database-serveren */
-$db = mysqli_connect("localhost", "root", "", "kahas0695");
+$host = getenv('DB_HOST');
+$username = getenv('DB_USER');
+$password = getenv('DB_PASSWORD');
+$database = getenv('DB_DATABASE');
 
-if (!$db) {
-    die("Ikke kontakt med database-serveren");
-}
-?>
+ $db=mysqli_connect($host,$username,$password,$database) or die ("ikke kontakt med database-server");
+    /* tilkobling til database-serveren utført */
+ ?>
