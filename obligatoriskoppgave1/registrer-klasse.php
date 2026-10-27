@@ -66,4 +66,4 @@ if (isset($_POST["registrerklasseknapp"]))
   }
 ?>
 <br>
-<a href="/indexobli.html">Tilbake</a>
+<a href="indexobli.html">Tilbake</a>
