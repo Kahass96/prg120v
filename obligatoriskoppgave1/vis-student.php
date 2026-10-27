@@ -41,4 +41,4 @@ print("</table>");
 
 ?>
 <br>
-<a href="../index.html">Tilbake til hovedmenyen</a>
+<a href="indexobli.html">Tilbake til hovedmenyen</a>
