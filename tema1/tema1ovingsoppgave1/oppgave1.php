@@ -13,6 +13,6 @@ echo "God dag $fornavn $etternavn <br />";
     <title>Document</title>
 </head>
 <body>
-        <a href="tema1/oppgave1.html">Tilbake</a>
+        <a href="tema1/tema1ovingsoppgave1/oppgave1.html">Tilbake</a>
 </body>
 </html>
