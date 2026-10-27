@@ -11,7 +11,7 @@
 
 <form action="" method="post" id="registrerKlasseskjema" name="registrerKlasseskjema">
     Klassekode
-    <input type="text" id="klassekode" name="klassekode" placeholder="IT1">
+    <input type="text" id="klassekode" name="klassekode" placeholder="IT1" required>
     <br><br>
 
     Klassenavn
