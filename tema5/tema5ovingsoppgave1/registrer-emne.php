@@ -66,4 +66,4 @@ if (isset($_POST["registreremneknapp"]))
   }
 ?>
 <br>
-<a href="indextema5.html">Tilbake</a>
+<a href="../indextema5.html">Tilbake</a>
