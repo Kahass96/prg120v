@@ -61,4 +61,4 @@ if (isset($_POST["registrerstudiumknapp"]))
   }
 ?>
 <br>
-<a href="tema5/indextema5.html">Tilbake</a>
+<a href="indextema5.html">Tilbake</a>

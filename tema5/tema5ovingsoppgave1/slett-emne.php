@@ -38,4 +38,4 @@ if (isset($_POST["slett"])) {
 </form>
 
 <br>
-<a href="tema5/indextema5.html">Tilbake</a>
+<a href="indextema5.html">Tilbake</a>
