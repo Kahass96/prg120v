@@ -11,19 +11,19 @@
 
 <form action="" method="post" id="registrerStudentskjema" name="registrerStudentskjema">
     Brukernavn
-    <input type="text" id="brukernavn" name="brukernavn" required>
+    <input type="text" id="brukernavn" name="brukernavn" placeholder="gb" required>
     <br><br>
 
     Fornavn
-    <input type="text" id="fornavn" name="fornavn" required>
+    <input type="text" id="fornavn" name="fornavn" placeholder="Geir" required>
     <br><br>
 
     Etternavn
-    <input type="text" id="etternavn" name="etternavn" required>
+    <input type="text" id="etternavn" name="etternavn" placeholder="Bjarvin" required>
     <br><br>
 
     Klassekode
-    <input type="text" id="klassekode" name="klassekode" required>
+    <input type="text" id="klassekode" name="klassekode" placeholder="IT1" required>
     <br><br>
 
     <input type="submit" value="Registrer Student" id="registrerStudentknapp" name="registrerStudentknapp">

@@ -32,7 +32,7 @@ if (isset($_POST["slett"])) {
 
 <form action="" method="post" onsubmit="return confirm('Er du sikker?')">
     Brukernavn:
-    <input type="text" name="brukernavn" required>
+    <input type="text" name="brukernavn" placeholder="gb" required>
 
     <input type="submit" name="slett" value="Slett student">
 

@@ -11,15 +11,15 @@
 
 <form action="" method="post" id="registrerKlasseskjema" name="registrerKlasseskjema">
     Klassekode
-    <input type="text" id="klassekode" name="klassekode" required>
+    <input type="text" id="klassekode" name="klassekode" placeholder="IT1">
     <br><br>
 
     Klassenavn
-    <input type="text" id="klassenavn" name="klassenavn" required>
+    <input type="text" id="klassenavn" name="klassenavn" placeholder="IT og ledelse 1. år" required>
     <br><br>
 
     Studiumkode
-    <input type="text" id="studiumkode" name="studiumkode" required>
+    <input type="text" id="studiumkode" name="studiumkode" placeholder="ITLED" required>
     <br><br>
 
     <input type="submit" value="Registrer Klasse" id="registrerklasseknapp" name="registrerklasseknapp">

@@ -32,7 +32,7 @@ if (isset($_POST["slett"])) {
 
 <form action="" method="post" onsubmit="return confirm('Er du sikker?')">
     klassekode:
-    <input type="text" name="klassekode" required>
+    <input type="text" name="klassekode" placeholder="IT1" required>
 
     <input type="submit" name="slett" value="Slett klasse">
 
