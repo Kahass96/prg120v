@@ -34,4 +34,4 @@ print("</table>");
 
 ?>
 <br>
-<a href="indextema5.html">Tilbake</a>
+<a href="../indextema5.html">Tilbake</a>
