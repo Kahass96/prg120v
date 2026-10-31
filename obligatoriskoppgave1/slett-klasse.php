@@ -3,6 +3,36 @@
 
 include("db-tilkobling.php");
 
+?>
+
+<h3>Slett klasse</h3>
+
+<form action="" method="post" id="slettKlasse" name="slettKlasse">
+    Velg klassekode
+    
+    <select name="klassekode" id="klassekode" required>
+        <option value="">Velg klassekode</option>
+
+        <?php
+        $sqlSetning = "SELECT * FROM klasse";
+        $sqlResultat = mysqli_real_query($db, $sqlSetning);
+
+        while ($rad = mysqli_fetch_array($sqlResultat))
+        {
+            $klassekode = $rad["klassekode"];
+            print("<option value='$klassekode'>$klassekode</option");
+        }
+        ?>
+    </select>
+
+    <br><br>
+
+    <input type="submit" name="slett klasse" value="Slett klasse">
+
+</form>
+
+<?php
+
 if (isset($_POST["slett"])) {
     
     $klassekode = $_POST["klassekode"];
@@ -28,15 +58,6 @@ if (isset($_POST["slett"])) {
 }
 ?>
 
-<h3>Slett klasse</h3>
-
-<form action="" method="post" onsubmit="return confirm('Er du sikker?')">
-    klassekode:
-    <input type="text" name="klassekode" placeholder="IT1" required>
-
-    <input type="submit" name="slett" value="Slett klasse">
-
-</form>
 
 <br>
 <a href="indexobli.html">Tilbake</a>
