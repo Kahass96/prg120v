@@ -5,6 +5,7 @@
 */
 
 include("db-tilkobling.php");
+
 ?>
 
 <h3>Slett Studium</h3>

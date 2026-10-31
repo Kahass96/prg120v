@@ -3,6 +3,32 @@
 
 include("db-tilkobling.php");
 
+?>
+
+<h3>Slett Student</h3>
+
+<form action="" method="post" id="slettStudentSkjema" name="slettStudentSkjema">
+    Velg brukernavn
+
+    <select name="brukernavn" id="brukernavn" required>
+        <option value="">Velg brukernavn</option>
+
+        <?php
+        $sqlSetning = "SELECT * FROM student";
+        $sqlResultat = mysqli_query($db, $sqlSetning);
+
+        while ($rad = mysqli_fetch_array($sqlResultat))
+        {
+            $brukernavn = $rad["brukernavn"];
+            print("<option value='$brukernavn'>$brukernavn</option>");
+        }
+        ?>
+    </select>
+    <br><br>
+<input type="submit" name="slett" value="Slett student">
+</form>
+
+<?php
 if (isset($_POST["slett"])) {
     
     $brukernavn = $_POST["brukernavn"];
@@ -27,16 +53,6 @@ if (isset($_POST["slett"])) {
     }
 }
 ?>
-
-<h3>Slett student</h3>
-
-<form action="" method="post" onsubmit="return confirm('Er du sikker?')">
-    Brukernavn:
-    <input type="text" name="brukernavn" placeholder="gb" required>
-
-    <input type="submit" name="slett" value="Slett student">
-
-</form>
 
 <br>
 <a href="indexobli.html">Tilbake</a>

@@ -19,7 +19,23 @@
     <br><br>
 
     Studiumkode
-    <input type="text" id="studiumkode" name="studiumkode" placeholder="ITLED" required>
+    
+      <select name="studiumkode" id="studiumkode" required>
+      <option value="">Velg studium</option>
+
+      <?php
+      include("db-tilkobling.php");
+
+      $sqlSetning = "SELECT * FROM STUDIUM";
+      $sqlResultat = mysqli_query($db, $sqlSetning);
+
+      while ($rad = mysqli_fetch_array($sqlResultat))
+      {
+        $studiumkode = $rad["studiumkode"];
+        print("<option value='$studiumkode'>$studiumkode</option>");
+      }
+      ?>
+    </select>
     <br><br>
 
     <input type="submit" value="Registrer Klasse" id="registrerklasseknapp" name="registrerklasseknapp">
