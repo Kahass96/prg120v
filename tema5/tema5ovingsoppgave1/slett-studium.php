@@ -1,7 +1,40 @@
 <?php
-/* Programmet sletter et registrert studie */
+/* slett-studium */
+/*
+   Programmet sletter et studium fra databasen.
+*/
 
 include("db-tilkobling.php");
+?>
+
+<h3>Slett Studium</h3>
+
+<form action="" method="post" id="slettStudiumSkjema" name="slettStudiumSkjema">
+
+    Velg studium
+
+    <select name="studiumkode" id="studiumkode" required>
+        <option value="">Velg studium</option>
+
+        <?php
+        $sqlSetning = "SELECT * FROM STUDIUM";
+        $sqlResultat = mysqli_query($db, $sqlSetning);
+
+        while ($rad = mysqli_fetch_array($sqlResultat))
+        {
+            $studiumkode = $rad["studiumkode"];
+            print("<option value='$studiumkode'>$studiumkode</option>");
+        }
+        ?>
+    </select>
+
+    <br><br>
+
+    <input type="submit" value="Slett studium" name="slettStudiumKnapp">
+
+</form>
+
+<?php
 
 if (isset($_POST["slett"])) {
     
@@ -27,15 +60,6 @@ if (isset($_POST["slett"])) {
     }
 }
 ?>
-
-<h3>Slett studium</h3>
-
-<form action="" method="post">
-    Studiumkode:
-    <input type="text" name="studiumkode" required>
-
-    <input type="submit" name="slett" value="Slett studium">
-</form>
 
 <br>
 <a href="../indextema5.html">Tilbake</a>
