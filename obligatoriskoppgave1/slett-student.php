@@ -25,8 +25,10 @@ include("db-tilkobling.php");
         ?>
     </select>
     <br><br>
-<input type="submit" name="slett" value="Slett student">
-</form>
+<input type="submit"
+       name="slett"
+       value="Slett student"
+       onclick="return confirm('Er du sikker på at du vil slette denne studenten?');"></form>
 
 <?php
 if (isset($_POST["slett"])) {

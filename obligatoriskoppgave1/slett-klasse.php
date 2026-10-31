@@ -7,7 +7,7 @@ include("db-tilkobling.php");
 
 <h3>Slett klasse</h3>
 
-<form action="" method="post" id="slettKlasse" name="slettKlasse">
+<form action="" method="post" id="slettKlasseKode" name="slettKlasseKode">
     Velg klassekode
     
     <select name="klassekode" id="klassekode" required>
@@ -15,7 +15,7 @@ include("db-tilkobling.php");
 
         <?php
         $sqlSetning = "SELECT * FROM klasse";
-        $sqlResultat = mysqli_real_query($db, $sqlSetning);
+        $sqlResultat = mysqli_query($db, $sqlSetning);
 
         while ($rad = mysqli_fetch_array($sqlResultat))
         {
@@ -27,13 +27,15 @@ include("db-tilkobling.php");
 
     <br><br>
 
-    <input type="submit" name="slett klasse" value="Slett klasse">
-
+<input type="submit"
+       name="slett"
+       value="Slett klasse"
+       onclick="return confirm('Er du sikker på at du vil slette denne klassen?');">
 </form>
 
 <?php
 
-if (isset($_POST["slett"])) {
+if (isset($_POST["slettKlasseKode"])) {
     
     $klassekode = $_POST["klassekode"];
 
