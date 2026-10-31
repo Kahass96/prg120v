@@ -18,30 +18,32 @@
     <input type="text" id="emnenavn" name="emnenavn" required>
     <br><br>
 
+    Studiumkode
+
+    <select name="studiumkode" id="studiumkode" required>
+      <option value="">Velg studium</option>
+
+      <?php
+      include("db-tilkobling.php");
+
+      $sqlSetning = "SELECT * FROM STUDIUM";
+      $sqlResultat = mysqli_query($db, $sqlSetning);
+
+      while ($rad = mysqli_fetch_array($sqlResultat))
+      {
+        $studiumkode = $rad["studiumkode"];
+        print("<option value='$studiumkode'>$studiumkode</option>");
+      }
+      ?>
+    </select>
+    <br><br>
+
     <input type="submit" value="Registrer Emne" id="registreremneknapp" name="registreremneknapp">
     <br>
 
     <input type="reset" value="Nullstill" name="nullstill">
     <br>
 </form>
-Studiumkode
-
-<select name="studiumkode" id="studiumkode" required>
-    <option value="">Velg studium</option>
-
-    <?php
-    include("db-tilkobling.php");
-
-    $sqlSetning = "SELECT * FROM STUDIUM";
-    $sqlResultat = mysqli_query($db, $sqlSetning);
-
-    while ($rad = mysqli_fetch_array($sqlResultat))
-    {
-        $studiumkode = $rad["studiumkode"];
-        print("<option value='$studiumkode'>$studiumkode</option>");
-    }
-    ?>
-</select>
 
 <br><br>
 <?php
