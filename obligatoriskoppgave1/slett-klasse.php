@@ -7,11 +7,10 @@ include("db-tilkobling.php");
 
 <h3>Slett klasse</h3>
 
-<<form action="" method="post" id="slettKlasseKode" name="slettKlasseKode">
+<form action="" method="post" id="slettKlasseKode" name="slettKlasseKode">
 
     Velg klassekode
-    <br><br>
-
+    
     <select name="klassekode" id="klassekode" required>
         <option value="">Velg klassekode</option>
 
