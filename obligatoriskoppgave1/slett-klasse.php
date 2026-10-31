@@ -7,9 +7,11 @@ include("db-tilkobling.php");
 
 <h3>Slett klasse</h3>
 
-<form action="" method="post" id="slettKlasseKode" name="slettKlasseKode">
+<<form action="" method="post" id="slettKlasseKode" name="slettKlasseKode">
+
     Velg klassekode
-    
+    <br><br>
+
     <select name="klassekode" id="klassekode" required>
         <option value="">Velg klassekode</option>
 
@@ -20,15 +22,17 @@ include("db-tilkobling.php");
         while ($rad = mysqli_fetch_array($sqlResultat))
         {
             $klassekode = $rad["klassekode"];
-            print("<option value='$klassekode'>$klassekode</option");
+            print("<option value='$klassekode'>$klassekode</option>");
         }
         ?>
     </select>
 
     <br><br>
 
-<input type="submit" name="slett" value="Slett klasse" onclick="return confirm('Er du sikker på at du vil slette denne klassen?');">
-<br><br>
+    <input type="submit"
+           name="slett"
+           value="Slett klasse"
+           onclick="return confirm('Er du sikker på at du vil slette denne klassen?');">
 
 </form>
 
