@@ -2,7 +2,7 @@
 
 /* registrer-studium */
 /*
-  Programmet lager et html-skjema for å registrere et studium.
+  Programmet lager et html-skjema for å registrere et emne.
   Programmet registrerer data (emnekode, emnenavn og studiumkode) i databasen.
 */
 ?>
@@ -19,8 +19,22 @@
     <br><br>
 
     Studiumkode
-    <input type="text" id="studiumkode" name="studiumkode" required>
-    <br>
+    < name="studiumkode" id="studiumkode" required>
+      <option value="">Velg studium</option>
+      <?php
+    include("db-tilkobling.php");
+
+    $sqlSetning = "SELECT * FROM STUDIUM";
+    $sqlResultat = mysqli_query($db, $sqlSetning);
+
+    while ($rad = mysqli_fetch_array($sqlResultat))
+    {
+        $studiumkode = $rad["studiumkode"];
+        print("<option value='$studiumkode'>$studiumkode</option>");
+    }
+    ?>
+
+    </select>
 
     <input type="submit" value="Registrer Emne" id="registreremneknapp" name="registreremneknapp">
     <br>
