@@ -27,10 +27,9 @@ include("db-tilkobling.php");
 
     <br><br>
 
-<input type="submit"
-       name="slett"
-       value="Slett klasse"
-       onclick="return confirm('Er du sikker på at du vil slette denne klassen?');">
+<input type="submit" name="slett" value="Slett klasse" onclick="return confirm('Er du sikker på at du vil slette denne klassen?');">
+<br><br>
+
 </form>
 
 <?php
