@@ -36,7 +36,7 @@ include("db-tilkobling.php");
 
 <?php
 
-if (isset($_POST["slett"])) {
+if (isset($_POST["slettStudiumKnapp"])) {
     
     $studiumkode = $_POST["studiumkode"];
 
