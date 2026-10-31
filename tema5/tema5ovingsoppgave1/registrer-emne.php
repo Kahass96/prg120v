@@ -18,10 +18,18 @@
     <input type="text" id="emnenavn" name="emnenavn" required>
     <br><br>
 
-    Studiumkode
-    < name="studiumkode" id="studiumkode" required>
-      <option value="">Velg studium</option>
-      <?php
+    <input type="submit" value="Registrer Emne" id="registreremneknapp" name="registreremneknapp">
+    <br>
+
+    <input type="reset" value="Nullstill" name="nullstill">
+    <br>
+</form>
+Studiumkode
+
+<select name="studiumkode" id="studiumkode" required>
+    <option value="">Velg studium</option>
+
+    <?php
     include("db-tilkobling.php");
 
     $sqlSetning = "SELECT * FROM STUDIUM";
@@ -33,16 +41,9 @@
         print("<option value='$studiumkode'>$studiumkode</option>");
     }
     ?>
+</select>
 
-    </select>
-
-    <input type="submit" value="Registrer Emne" id="registreremneknapp" name="registreremneknapp">
-    <br>
-
-    <input type="reset" value="Nullstill" name="nullstill">
-    <br>
-</form>
-
+<br><br>
 <?php
 if (isset($_POST["registreremneknapp"])) 
   {
